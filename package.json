@@ -1,0 +1,26 @@
+{
+  "name": "sorting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bubblesort.js",
+  "scripts": {
+    "test": "jasmine",
+    "doc": "test/bubblesort.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMSpears/sorting.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AMSpears/sorting.js/issues"
+  },
+  "homepage": "https://github.com/AMSpears/sorting.js#readme",
+  "dependencies": {
+    "testem": "^3.0.3"
+  },
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
