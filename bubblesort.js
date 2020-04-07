@@ -1,17 +1,12 @@
 const bubbleSort = (arr) => {
-  let orderedArr = arr.slice()
   for (let i = 0; i < arr.length; i++) {
-    let curr = arr[i]
-    let next = arr[i + 1]
-    let currOrder = orderedArr[i]
-    let nextOrder = orderedArr[i + 1]
-
-    // TODO: figure out how to repeately compare curr and next till all is sorted into the ordered arr
-    if (curr < next) {
-      orderedArr.splice(nextOrder, currOrder)
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let firstItem = arr[j]
+        arr[j] = arr[j + 1]
+        arr[j + 1] = firstItem
+      }
     }
   }
-
-  console.log(orderedArr)
-  return orderedArr
+  return arr
 }
